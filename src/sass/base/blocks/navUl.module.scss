@@ -1,0 +1,9 @@
+.ul_lists {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+
+    .list_item {
+        color: var(--text-color);
+    }
+}
