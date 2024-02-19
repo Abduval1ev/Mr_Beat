@@ -2,10 +2,22 @@ html,
 body {
     font-family: var(--font-main);
     font-weight: 400;
-    
+
 
     .container {
-        max-width: 1340px;
+        max-width: 100%;
         margin: 0 100px;
+
+        @media (max-width: 1200px) {
+            margin: 0 85px;
+        }
+
+        @media (max-width: 1050px) {
+            margin: 0 40px;
+        }
+
+        @media (max-width: 425px) {
+            margin: 0 10px;
+        }
     }
 }

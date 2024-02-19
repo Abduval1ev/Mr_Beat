@@ -4,10 +4,19 @@
     align-items: center;
     margin: 20px 0;
 
+    @media (max-width: 1200px) {
+        margin: 10px 0;
+    }
+
+    @media (max-width: 1050px) {
+        margin: 7px 0;
+    }
+
     .nav_left {
         display: flex;
         align-items: center;
         gap: 50px;
+
         .logo {
             display: flex;
             align-items: center;
@@ -34,12 +43,26 @@
         }
     }
 
+    .nav_dubble_lists{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 70px;
+    }
+
     .nav_right {
         display: flex;
         align-items: center;
         gap: 45px;
-        .nav_region{
 
+        .nav_call {
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--text-color);
+
+            &>span {
+                color: var(--yellow);
+            }
         }
     }
 }

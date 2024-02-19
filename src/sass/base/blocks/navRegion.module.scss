@@ -1,0 +1,22 @@
+.nav_region {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    .nav_region_icon {
+        display: flex;
+
+        .nav_dropicon {
+            width: 12px;
+            height: auto;
+        }
+    }
+
+    .nav_region_text {
+        font-weight: 300;
+    }
+}
