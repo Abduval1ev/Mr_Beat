@@ -7,25 +7,27 @@ import Region from '../Region/Region'
 export default function NavBar() {
     return (
         <>
-            <nav className={style.nav}>
-                <div className={style.nav_left}>
-                    <Link to={'/'}>
-                        <div className={style.logo}>
-                            <h1 className={style.nav_link}>MR.</h1>
-                            <h1 className={style.nav_link_}>БЫТ</h1>
-                        </div>
-                    </Link>
-                </div>
-                <div className={style.nav_dubble_lists}>
-                    <Ul />
-                    <Region />
-                </div>
+            <div className="container none" >
+                <nav className={style.nav}>
+                    <div className={style.nav_left}>
+                        <Link to={'/'}>
+                            <div className={style.logo}>
+                                <h1 className={style.nav_link}>MR.</h1>
+                                <h1 className={style.nav_link_}>БЫТ</h1>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className={style.nav_dubble_lists}>
+                        <Ul />
+                        <Region />
+                    </div>
 
 
-                <div className={style.nav_right}>
-                    <h1 className={style.nav_call}>8 (495) <span>106-52-16</span></h1>
-                </div>
-            </nav>
+                    <div className={style.nav_right}>
+                        <h1 className={style.nav_call}>8 (495) <span>106-52-16</span></h1>
+                    </div>
+                </nav>
+            </div >
         </>
     )
 }

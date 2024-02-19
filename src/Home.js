@@ -12,7 +12,6 @@ import Indexx from "./Pages/Indexx";
 function Home() {
   return (
     <>
-      <div className="container">
         <NavBar />
         <Routes>
           <Route element={<Indexx />} path={'/'} />
@@ -23,7 +22,6 @@ function Home() {
           <Route element={<Service />} path={'/service'} />
         </Routes>
         <Footer />
-      </div>
     </>
   );
 }
