@@ -4,11 +4,11 @@
     align-items: center;
     margin: 20px 0;
 
-    @media (max-width: 1200px) {
+    @mixin xl {
         margin: 10px 0;
     }
 
-    @media (max-width: 1050px) {
+    @mixin lg {
         margin: 7px 0;
     }
 
@@ -43,7 +43,7 @@
         }
     }
 
-    .nav_dubble_lists{
+    .nav_dubble_lists {
         display: flex;
         justify-content: flex-start;
         align-items: center;

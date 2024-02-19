@@ -5,9 +5,53 @@
     --grey: #F1F1F1;
     --green: #09D743;
     --white: #FFFFFF;
+    
     // Text Colors 
     --text-color: #3E3E3E;
 
     // Font Family
-    --font-main: "Gilroy", sans-serif;
+    --font-main: "Montserrat", sans-serif;
+
+}
+
+@mixin max-small() {
+    @media (max-width:320px) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media (max-width: 425px) {
+        @content;
+    }
+}
+
+// @mixin small() {
+//     @media (max-width: 375px) {
+//         @content;
+//     }
+// }
+
+@mixin md() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin xl() {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xxl() {
+    @media (max-width: 1440px) {
+        @content;
+    }
 }

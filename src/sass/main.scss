@@ -1,6 +1,10 @@
-@import '../fonts/stylesheet';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import './base/base.scss';
 @import './base/reset.scss';
 @import './base/vars.scss';
-@import './base/blocks/navRegion.module';
+
+// Blocks
+@import './base/blocks/navRegion.module.scss';
+@import './base/blocks/header.module.scss';
+@import './base/blocks/input.module.scss';
