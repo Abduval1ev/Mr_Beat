@@ -4,14 +4,6 @@
     align-items: center;
     margin: 20px 0;
 
-    @mixin xl {
-        margin: 10px 0;
-    }
-
-    @mixin lg {
-        margin: 7px 0;
-    }
-
     .nav_left {
         display: flex;
         align-items: center;
@@ -56,12 +48,16 @@
         gap: 45px;
 
         .nav_call {
-            font-size: 18px;
+            font-size: clamp(10px, 2vw, 28px);
             font-weight: 900;
             color: var(--text-color);
 
             &>span {
                 color: var(--yellow);
+            }
+
+            @media (max-width: 768px) {
+                display: none;
             }
         }
     }

@@ -3,6 +3,10 @@
     align-items: center;
     gap: 43px;
 
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
     .nav_list_dropdown {
         display: flex;
         justify-content: center;
@@ -17,11 +21,9 @@
         .nav_list_dropdown {}
     }
 
-    @media (max-width: 1024px) {
-        display: none;
-    }
 
     .list_item {
         color: var(--text-color);
+        font-size: clamp(12px, 2vw, 18px);
     }
 }

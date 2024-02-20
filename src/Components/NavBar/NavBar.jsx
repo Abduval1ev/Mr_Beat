@@ -7,7 +7,7 @@ import Region from '../Region/Region'
 export default function NavBar() {
     return (
         <>
-            <div className="container none" >
+            <div className="container" >
                 <nav className={style.nav}>
                     <div className={style.nav_left}>
                         <Link to={'/'}>
@@ -21,7 +21,6 @@ export default function NavBar() {
                         <Ul />
                         <Region />
                     </div>
-
 
                     <div className={style.nav_right}>
                         <h1 className={style.nav_call}>8 (495) <span>106-52-16</span></h1>
