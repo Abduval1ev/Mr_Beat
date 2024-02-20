@@ -18,5 +18,6 @@
 
     .nav_region_text {
         font-weight: 300;
+        font-size: clamp(12px, 2vw, 18px);
     }
 }
