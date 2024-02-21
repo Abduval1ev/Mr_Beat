@@ -6,7 +6,7 @@
 
     .header_label {
         .input {
-            max-width: 290px;
+            max-width: clamp(330px, 100%, 230px);
             height: 44px;
             padding: 10px 20px;
             font-size: 18px;
@@ -18,9 +18,9 @@
     }
 
     .input_btn {
-        max-width: 162px;
+        max-width: clamp(100px, 1vw, 120px);
         padding: 10px;
-        font-size: 20px;
+        font-size: clamp(14px, 1vw, 24px);
         font-weight: 500;
         border-radius: 3px;
         color: var(--white);
