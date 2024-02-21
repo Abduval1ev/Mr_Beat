@@ -3,6 +3,7 @@ import style from '../../sass/base/blocks/nav.module.scss'
 import { Link } from 'react-router-dom'
 import Ul from '../Ul/Ul'
 import Region from '../Region/Region'
+import NavMobile from '../NavMoblie/NavMobile'
 
 export default function NavBar() {
     return (
@@ -24,6 +25,7 @@ export default function NavBar() {
 
                     <div className={style.nav_right}>
                         <h1 className={style.nav_call}>8 (495) <span>106-52-16</span></h1>
+                        <NavMobile />
                     </div>
                 </nav>
             </div >
