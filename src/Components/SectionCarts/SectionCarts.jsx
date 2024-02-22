@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from '../../sass/base/blocks/homeSectionCart.module.scss'
 import ArrowDown from '../images/icon-down-arrow.svg'
+import axios from 'axios'
 
 export default function SectionCarts() {
+  const [cart, setCart] = useState([])
+
+  useEffect(() => {
+    axios.get(`http://localhost:9000/products`)
+      .then(res => setCart(res.data))
+      .catch(err => console.log(err))
+  }, [])
 
 
   return (
@@ -22,7 +30,27 @@ export default function SectionCarts() {
           </div>
           <div className={style.cart_wrapper}>
             {
-
+              cart.map(cart => {
+                return (
+                  <React.Fragment key={cart.id}>
+                    <div className={style.item}>
+                      <div className={style.item_title}>{cart.title}</div>
+                      <div className={style.item_content}>
+                        <ul className={style.item_lists}>
+                          <li className={style.item_list}>{cart.text}</li>
+                          <li className={style.item_list}>{cart.text2}</li>
+                          <li className={style.item_list}>{cart.text3}</li>
+                          <li className={style.item_list}>{cart.text4}</li>
+                          <li className={style.item_list}>{cart.text5}</li>
+                          <li className={style.item_list}>{cart.text6}</li>
+                        </ul>
+                        <div className={style.item_img}>
+                        </div>
+                      </div>
+                    </div>
+                  </React.Fragment>
+                )
+              })
             }
           </div>
         </div>

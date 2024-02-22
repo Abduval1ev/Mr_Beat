@@ -26,5 +26,13 @@
 
     .cart_wrapper {
         margin: 45px 0 0;
+
+        .item {
+            width: clamp(220px, 27.8vw, 400px);
+            background-color: var(--cart-bg);
+            padding: max(35px, 48px) min(14px, 10px);
+            
+            .item_content {}
+        }
     }
 }
