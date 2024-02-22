@@ -45,6 +45,7 @@ export default function SectionCarts() {
                           <li className={style.item_list}>{cart.text6}</li>
                         </ul>
                         <div className={style.item_img}>
+                          
                         </div>
                       </div>
                     </div>
