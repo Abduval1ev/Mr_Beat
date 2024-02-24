@@ -44,6 +44,7 @@ export default function SectionCarts() {
                           <li className={style.item_list}>{cart.text6}</li>
                         </ul>
                         <div className={style.item_img}>
+                          <img className={style.item_image} src={process.env.PUBLIC_URL + '/ui/' + cart.image} alt="Image" />
                         </div>
                       </div>
                     </div>
