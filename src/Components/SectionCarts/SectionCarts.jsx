@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import style from '../../sass/base/blocks/homeSectionCart.module.scss'
 import ArrowDown from '../images/icon-down-arrow.svg'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
+import itemIcon from '../images/Item_card_icon.svg'
 
 export default function SectionCarts() {
   const [cart, setCarts] = useState([])
@@ -35,14 +37,26 @@ export default function SectionCarts() {
                     <div className={style.item}>
                       <div className={style.item_title}>{cart.title}</div>
                       <div className={style.item_content}>
-                        <ul className={style.item_lists}>
-                          <li className={style.item_list}>{cart.text}</li>
-                          <li className={style.item_list}>{cart.text2}</li>
-                          <li className={style.item_list}>{cart.text3}</li>
-                          <li className={style.item_list}>{cart.text4}</li>
-                          <li className={style.item_list}>{cart.text5}</li>
-                          <li className={style.item_list}>{cart.text6}</li>
-                        </ul>
+                        <div className={style.item_list_link}>
+                          <ul className={style.item_lists}>
+                            <li className={style.item_list}>{cart.text}</li>
+                            <li className={style.item_list}>{cart.text2}</li>
+                            <li className={style.item_list}>{cart.text3}</li>
+                            <li className={style.item_list}>{cart.text4}</li>
+                            <li className={style.item_list}>{cart.text5}</li>
+                            <li className={style.item_list}>{cart.text6}</li>
+                          </ul>
+                          <Link to={'#!'}>
+                            <div className={style.item_link}>
+                              Подробнее
+                              <img
+                                className={style.item_link_icon}
+                                src={itemIcon}
+                                alt="Image"
+                              />
+                            </div>
+                          </Link>
+                        </div>
                         <div className={style.item_img}>
                           <img className={style.item_image} src={process.env.PUBLIC_URL + '/ui/' + cart.image} alt="Image" />
                         </div>
