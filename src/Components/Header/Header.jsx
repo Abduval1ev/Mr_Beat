@@ -21,7 +21,7 @@ export default function Header() {
                         </div>
                         <div className={style.header_right}>
                             <img
-                                className={style.header_maaster_image}
+                                className={style.header_master_image}
                                 src={masterImg}
                                 alt=""
                             />

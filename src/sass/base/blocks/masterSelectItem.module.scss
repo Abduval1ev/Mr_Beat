@@ -1,0 +1,30 @@
+.master_select_item {
+    position: relative;
+    width: clamp(300px, 7.306rem + 48.83vw, 820px);
+    background-color: var(--cart-bg);
+    padding: 26px 36px;
+    border-radius: 4px;
+
+    .master_select_item_left_border {
+        .left_border {
+            position: absolute;
+            top: 26px;
+            width: 5px;
+            height: 36px;
+            border-radius: 1px;
+            background-color: var(--green);
+        }
+
+        .master_select_item_title {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 15px 0;
+        }
+
+        .master_select_item_text {
+            font-size: 12px;
+            margin: 0 15px 0;
+
+        }
+    }
+}
