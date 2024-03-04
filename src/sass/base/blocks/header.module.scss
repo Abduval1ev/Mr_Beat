@@ -41,7 +41,10 @@
         }
 
         .header_right {
-            width: clamp(335px, 60%, 635px);
+            .header_master_image {
+                width: clamp(333px, 14.144rem + 28.45vw, 3636px);
+            }
+
         }
 
     }

@@ -8,7 +8,7 @@ export default function Indexx() {
   return (
     <>
       <Header />
-      <SectionCarts />
+      {/* <SectionCarts /> */}
       <MasterCart />
     </>
   )
