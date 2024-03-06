@@ -16,15 +16,21 @@
         }
 
         .master_select_item_title {
-            font-size: 18px;
+            font-size: clamp(10px, 0.017rem + 1.27vw, 18px);
             font-weight: 500;
             margin: 0 15px 0;
         }
 
         .master_select_item_text {
-            font-size: 12px;
+            font-size: clamp(10px, 0.409rem + 0.45vw, 12px);
             margin: 0 15px 0;
-
         }
+    }
+
+    .master_select_item_image {
+        position: absolute;
+        width: clamp(130px, 0.347rem + 16.2vw, 200px);
+        top: clamp(-15px, 0.778rem + 0.8vw, -22px);
+        right: clamp(10px, -0.17rem + 3.98vw, 45px);
     }
 }

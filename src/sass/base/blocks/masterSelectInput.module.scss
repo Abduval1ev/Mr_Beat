@@ -1,0 +1,39 @@
+.label {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0;
+
+    .input {
+        width: clamp(200px, 6.424rem + 12.66vw, 280px);
+        font-size: clamp(10px, 0.321rem + 0.63vw, 14px);
+        font-weight: 600;
+        color: var(--text-color);
+        background-color: var(--white);
+        padding-top: clamp(0.625rem, 0.017rem + 1.27vw, 1.125rem);
+        padding-bottom: clamp(0.625rem, 0.017rem + 1.27vw, 1.125rem);
+        padding-right: clamp(0.938rem, 0.558rem + 0.79vw, 1.25rem);
+        padding-left: clamp(0.938rem, 0.558rem + 0.79vw, 1.25rem);
+    }
+
+    .btn {
+        width: clamp(88px, 3.07rem + 5.06vw, 120px);
+        border-radius: 3px;
+        padding: clamp(10px, 0.017rem + 1.27vw, 18px);
+        font-size: clamp(10px, 0.321rem + 0.63vw, 14px);
+        font-weight: 500;
+        color: var(--white);
+        background-color: var(--blue);
+    }
+}
+
+.text_content_label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 15px 0 0;
+
+    .text {
+        color: var(--text-color);
+        font-size: clamp(8px, 0.196rem + 0.63vw, 12px);
+    }
+}
