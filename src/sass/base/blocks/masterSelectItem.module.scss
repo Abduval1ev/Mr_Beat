@@ -14,17 +14,6 @@
             border-radius: 1px;
             background-color: var(--green);
         }
-
-        .master_select_item_title {
-            font-size: clamp(10px, 0.017rem + 1.27vw, 18px);
-            font-weight: 500;
-            margin: 0 15px 0;
-        }
-
-        .master_select_item_text {
-            font-size: clamp(10px, 0.409rem + 0.45vw, 12px);
-            margin: 0 15px 0;
-        }
     }
 
     .master_select_item_image {

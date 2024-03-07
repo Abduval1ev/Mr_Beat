@@ -1,0 +1,25 @@
+    .master_card {
+        display: flex;
+        align-items: center;
+
+        .ul_lists {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .item_list {
+                display: flex;
+                align-items: center;
+                font-size: clamp(7px, -0.094rem + 1.11vw, 14px);
+                font-weight: 600;
+
+                .icon_img {
+                    width: clamp(10px, -0.063rem + 2.22vw, 30px);
+                }
+            }
+        }
+
+        .master_card_image {
+            width: clamp(126px, 3.242rem + 9.65vw, 187px);
+        }
+    }

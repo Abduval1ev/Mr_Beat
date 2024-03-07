@@ -9,6 +9,24 @@ body {
         margin: 0 auto;
     }
 
+    .header_title {
+        color: var(--text-color);
+        font-size: clamp(20px, 0.972rem + 2.25vw, 48px);
+        font-weight: 800;
+        text-align: center;
+        margin: 0 0 clamp(16px, 0.78rem + 0.94vw, 26px);
+    }
+
+    .header_text {
+        text-align: center;
+        font-size: clamp(12px, 0.486rem + 1.13vw, 24px);
+        color: var(--text-color);
+    }
+
+    .header_img{
+        
+    }
+
     .none {
         display: none;
     }
