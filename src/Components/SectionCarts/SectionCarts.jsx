@@ -19,19 +19,19 @@ export default function SectionCarts() {
       <section className={style.section}>
         <div className="container">
           <div className={style.section_content}>
-            <h1 className={style.section_title}>Чем мы поможем?</h1>
+            <h1 className='header_title'>Чем мы поможем?</h1>
             <p
-              className={style.section_text}>
+              className='header_text'>
               Приоритетным направлением деятельности нашей компании является ремонт бытовой техники на дому.
             </p>
             <img
-              className={style.section_down_icon}
+              className='header_img'
               src={ArrowDown}
               alt="Icon" />
           </div>
           <div className={style.cart_wrapper}>
             {
-              cart.map(cart => {
+              cart.slice(0, 3).map(cart => {
                 return (
                   <React.Fragment key={cart.id}>
                     <div className={style.item}>
